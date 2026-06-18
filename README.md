@@ -1,38 +1,84 @@
-# 📘 Projeto: Tabuada com Loop `while` em Python
+# 📘 Projeto: Tabuada de 0 a 100 com Python
 
-Este projeto demonstra como utilizar **loops `while`** em Python para gerar a tabuada de números de **0 a 100**.
+Este projeto em Python gera automaticamente a **tabuada de 0 até 100**, utilizando estruturas de repetição (`while`).
+
+---
 
 ## 🚀 Objetivo
 
-Praticar o uso de estruturas de repetição (`while`) criando um programa simples que:
+Praticar conceitos fundamentais de programação, incluindo:
 
-- Percorre números de 0 a 100
-- Para cada número, imprime sua tabuada de 1 a 10
-- Utiliza **dois loops `while`** (um externo e um interno)
+- Estruturas de repetição (`while`)
+- Loops aninhados
+- Controle de fluxo
+- Saída formatada no terminal
 
-## 🧠 Conceitos Utilizados
+---
 
-- Loop `while`
-- Variáveis e incrementos
-- Estruturas aninhadas (loop dentro de loop)
-- Impressão formatada (`f-string`)
+## 🧠 Como funciona
 
-## 📂 Estrutura do Código
+O programa utiliza:
+
+- Um `while` externo para percorrer os números de **0 até 100**
+- Um `while` interno para calcular a tabuada de **0 até 10** de cada número
+
+---
+
+## 💻 Código
 
 ```python
-# Loop externo: controla o número base (0 a 100)
-numero = 0
+n = 0
 
-while numero <= 100:
-    print(f"\n📊 Tabuada do {numero}")
+while n <= 100:
+    print("===============")
+    print(f"Tabuada do {n}")
 
-    # Loop interno: multiplica o número de 1 a 10
-    multiplicador = 1
+    contador = 0
+    while contador <= 10:
+        print(f"{n} x {contador} = {n * contador}")
+        contador += 1
 
-    while multiplicador <= 10:
-        resultado = numero * multiplicador
-        print(f"{numero} x {multiplicador} = {resultado}")
-        multiplicador += 1
+    print("===============")
+    n += 1
 
-    numero += 1
+print("Desenvolvido por: Kobe")
 ```
+
+---
+
+## ▶️ Como executar
+
+1. Instale o Python (caso ainda não tenha)
+2. Salve o arquivo como `tabuada.py`
+3. Execute no terminal:
+
+```bash
+python tabuada.py
+```
+
+---
+
+## 📌 Exemplo de saída
+
+```
+===============
+Tabuada do 2
+2 x 0 = 0
+2 x 1 = 2
+2 x 2 = 4
+...
+2 x 10 = 20
+===============
+```
+
+---
+
+## 📚 Requisitos
+
+- Python 3.x
+
+---
+
+## 📄 Licença
+
+Este projeto é livre para fins educacionais.
