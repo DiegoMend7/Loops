@@ -9,3 +9,5 @@ while n != 101:
     print(f"{n} x {contador} = {resultado}")
   n +=1;
   print("===============")
+
+  print("Desenvolvido por: Kobe");
