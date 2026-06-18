@@ -75,7 +75,7 @@ Tabuada do 2
 
 ## 📚 Requisitos
 
-- Python 3.x
+- Python 3.13.11
 
 ---
 
